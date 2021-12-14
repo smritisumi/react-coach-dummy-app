@@ -1,0 +1,96 @@
+:root {
+	--mainWhite: #f3f3f3;
+	--mainblack: #333333;
+}
+body {
+	font-family: "Oswald", sans-serif !important;
+	color: var(--mainblack) !important;
+}
+.header {
+	box-shadow: 2px 9px 13px -9px rgba(99, 99, 99, 0.56);
+	-webkit-box-shadow: 2px 9px 13px -9px rgba(99, 99, 99, 0.56);
+	-moz-box-shadow: 2px 9px 13px -9px rgba(99, 99, 99, 0.56);	
+	min-height: 130px;
+	height: auto;
+	text-align:center;
+}
+.footer {
+	box-shadow: -1px -6px 13px -9px rgba(99, 99, 99, 0.56);
+	-webkit-box-shadow: -1px -6px 13px -9px rgba(99, 99, 99, 0.56);
+	-moz-box-shadow: -1px -6px 13px -9px rgba(99, 99, 99, 0.56);
+	height: 50px;
+	text-align:center;
+	padding:20px 0;
+}
+.wrapper.home {
+	background-image: url(../image/coach_desktop_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.wrapper.home h2 {
+	font-size:60px;
+	margin-bottom:15px;
+}
+.wrapper.home p {
+	font-size:30px;
+	margin-bottom:0;
+}
+.wrapper.home a {
+	display:inline-block;
+	color:var(--mainblack);
+	font-size:20px;
+}
+
+.maincontainer {
+	padding:20px;
+}
+.logo img{
+	margin:20px 0;
+}
+.copyright {
+	font-size:11px;
+}
+.product-tile {
+	padding: 20px;
+	margin-bottom: 30px;
+	border:1px solid var(--mainWhite);	
+}
+
+.product-tile a {
+	color: var(--mainblack);
+}
+
+.product-tile__img {
+	width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.product-tile__img img,
+.product__img img,
+.wrapper.home img {
+	width: 100%;
+	height:100%;
+}
+.product__img,
+.product__detail {
+	padding: 0px 50px;
+	margin: 30px 0;
+}
+.product__img {
+	padding: 30px 50px;
+}
+.product__name {
+	margin-bottom:15px;
+	font-size: 50px;
+}
+.product__price {
+	margin-bottom:30px;
+}
+.product-container{
+	margin-top: 30px;
+}
+
+
