@@ -4,20 +4,16 @@ import { useSelector } from 'react-redux';
 
 export default function FilterProduct() {
 	let products = useSelector((state) => state.allProducts.productLists);
-	
-	let categoryList = products.map((categotyItem) => {
-		let { category, id } = categotyItem;
-		return (
-			<div key={id}>				
-				<Link to={`/productlisting/${category}`} key={id}>
-					{category}
-				</Link>
-			</div>
-			
-		);
-	});
-
+	const categoryList = [...new Set(products.map(data => data.category))]	
 	return (
-		<>{categoryList}</>
+		<div>
+			{categoryList.map(({id}, index)=>
+				<div>
+					<Link to={`/productlisting/${categoryList[index]}`} key={index}>
+						{categoryList[index]}
+					</Link>
+				</div>
+			)}
+		</div>		
 	);
 }
